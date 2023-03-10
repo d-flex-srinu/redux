@@ -6,10 +6,8 @@ import About from './components/About';
 import TextForm from './components/TextForms';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
   Routes,
-  Link,
 } from "react-router-dom";
 
 function App() {
@@ -34,8 +32,9 @@ function App() {
         <Routes>
           <Route exact path="/about" element={<About />} />
           <Route path='/home' element={<TextForm showAlert={showAlert} heading="Enter text here " />} />
+          {/* <TextForm showAlert={showAlert} heading="Enter text here " /> */}
         </Routes>
-      </Router>
+      </Router> 
     </>
   );
 }
